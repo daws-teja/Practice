@@ -4,7 +4,7 @@
 
 USER_ID=$(id -u)
 
-fi [ $USER_ID -ne 0 ]; then
+if [ $USER_ID -ne 0 ]; then
     echo "please run with root user access"
     exit 1
 fi
