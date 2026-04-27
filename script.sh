@@ -25,5 +25,5 @@ $$
 echo background process id 
 $!
 
-exit status of previous command
+echo exit status of previous command
 $?
