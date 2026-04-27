@@ -5,6 +5,11 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
     echo please run this script with root user access
     exit 1
-else
-    echo you are good to go
 fi
+
+dnf install nginx -y
+
+if [ $? -ne 0 ]; then
+    echo "nginx installation.. FAILURE"
+else
+    echo "nginx installation.. SUCCESSFUL"
