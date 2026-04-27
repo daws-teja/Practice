@@ -2,4 +2,4 @@
 
 
 
-echo nothing
+echo connected 
