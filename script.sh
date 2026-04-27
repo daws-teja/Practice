@@ -1,9 +1,10 @@
 #!/bin/bash
 
-NUM=$1
+USERID=$(id -u)
 
-if [ $NUM -gt 17 ]; then
-    echo you are major
+if ($USERID -ne 0); then
+    echo please run this script with root user access
+    exit 1
 else
-    echo you are minor
+    echo you are good to go
 fi
