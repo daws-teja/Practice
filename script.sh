@@ -1,8 +1,8 @@
 #!/bin/bash
 
-Number = $1
+NUM = $1
 
-if ($Number -ge  17); then
+if [$NUM -ge 17]; then
     echo you are major
 else
     echo you are minor
