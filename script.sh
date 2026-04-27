@@ -1,11 +1,5 @@
 #!/bin/bash
 
-echo enter a number :
-read NUM1
+fruits=("Apple" "Banana" "Orange")
 
-echo enter another number :
-read NUM2 
-
-TOTAL=$((NUM1 + NUM2)) 
-
-echo total sum of number is $TOTAL
+echo the fruits are ${fruits[@]}
