@@ -1,5 +1,9 @@
 #!/bin/bash
 
-fruits=("Apple" "Banana" "Orange")
+Number = $1
 
-echo the fruits are ${fruits[@]}
+if ($Number -ge  17); then
+    echo you are major
+else
+    echo you are minor
+fi
