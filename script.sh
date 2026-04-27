@@ -1,19 +1,11 @@
 #!/bin/bash
 
-echo "all variables passed to script: $@"
+echo enter a number :
+read NUM1
 
-echo "number of variables passed to script: $#"
+echo enter another number :
+read NUM2 
 
-echo "script name: $0"
+TOTAL =  $( $NUM1 + $NUM2 ) 
 
-echo "present working directory: $PWD"
-
-echo "who is running the script: $USER"
-
-echo "home directory of user: $HOME"
-
-echo "process id of script: $$"
-
-echo "background process id: $!"
-
-echo "exit status of previous command: $?"
+echo total sum of number is $TOTAL
