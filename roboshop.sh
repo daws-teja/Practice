@@ -17,7 +17,7 @@ do
 
 done
 
-if [ $INSTANCE == "frontned" ], then
+if [ $INSTANCE == "frontend" ], then
 
     IP=$(
             aws ec2 describe-instances \
